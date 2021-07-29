@@ -1,0 +1,35 @@
+﻿@model List<BookKeeper.Models.BookModel>
+
+@{
+    ViewData["Title"] = "Books";
+}
+
+<h1>Books</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Book title</th>
+            <th>Author</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in @Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BookName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Author)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+                </tr>
+         }
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+﻿@model List<BookModel>
+
+<h1>Books of @Model.Select(book => book.Author).FirstOrDefault().ToString()</h1>
+<hr />
+
+<p>
+    <a asp-action="ListAuthors">Back To Authors List</a>
+</p>
+
+<ul>
+    @foreach (var book in Model)
+    {
+        <li>
+            @book.BookName, @book.Date
+        </li>
+    }
+</ul>

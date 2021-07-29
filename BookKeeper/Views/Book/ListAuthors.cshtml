@@ -1,0 +1,17 @@
+﻿@model List<string>
+
+<h1>Authors</h1>
+<hr />
+<p>
+    <a asp-action="Index">Back to Book List</a>
+</p>
+
+<ul>
+    @foreach (var book in Model)
+    {
+        <li>
+            @book  |
+            @Html.ActionLink("Show all books", "ListAuthorBooks", "Book", new { bookAuthor = @book })
+        </li>
+    }
+</ul>

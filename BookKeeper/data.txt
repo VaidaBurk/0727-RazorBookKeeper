@@ -1,0 +1,6 @@
+The Little prince;Antoine de Saint-Exupery;7/29/2021
+Hamlet;William Shakespeare;7/29/2021
+Romeo and Julliet;William Shakespeare;7/29/2021
+Wind, Sand & Stars;Antoine de Saint-Exupery;7/29/2021
+A Midsummer Night's Dream;William Shakespeare;7/29/2021
+The Stranger;Albert Camus;7/29/2021
